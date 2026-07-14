@@ -1,96 +1,238 @@
-# 🎓 Student Management System
+# 🎓 University Management System
 
-A full-stack Student Management System built using the MERN Stack. This application helps manage students, teachers, faculty, and administrators through separate dashboards with secure authentication and an easy-to-use interface.
+A responsive University Management System developed using **HTML, CSS, and JavaScript**. This project provides separate dashboards for **Admin, Faculty, and Students** with authentication, registration, and management features. The project stores data in the browser using **LocalStorage**, so no database is required.
 
-## 🚀 Features
+---
 
-- 👨‍🎓 Student Management
-- 👩‍🏫 Teacher Management
-- 🏢 Faculty Management
-- 👨‍💼 Admin Dashboard
-- 🔐 User Authentication & Authorization
-- 📊 Dashboard for Different Roles
-- 📝 Add, Update, Delete & View Records (CRUD)
-- 📱 Responsive User Interface
+# 📌 Features
 
-## 🛠️ Tech Stack
+### 👨‍💼 Admin
+- Login as Admin
+- View all users
+- Manage students
+- Manage faculty
+- Manage courses
+- Logout
 
-### Frontend
-- React.js
+### 👩‍🏫 Faculty
+- Login as Faculty
+- View profile
+- View assigned subjects
+- Grade students
+- Mark attendance
+- Logout
+
+### 👨‍🎓 Student
+- Login as Student
+- View profile
+- View attendance
+- View grades
+- Logout
+
+### 🔐 Authentication
+- Login
+- Registration
+- Role-based dashboard
+- Session stored using LocalStorage
+
+---
+
+# 💻 Technologies Used
+
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
+- Browser LocalStorage
 
-### Backend
-- Node.js
-- Express.js
+---
 
-### Database
-- MongoDB
-
-## 📂 Project Structure
+# 📂 Folder Structure
 
 ```
-Student-Management-System/
-│── client/
-│── server/
-│── routes/
-│── components/
-│── dashboard/
-│── styles/
-│── package.json
-│── README.md
+University-Management-System
+│
+├── index.html
+├── admin.html
+├── faculty.html
+├── student.html
+├── script.js
+├── style.css
+├── package.json
+└── README.md
 ```
 
-## ⚙️ Installation
+---
 
-### Clone the repository
+# 🚀 How to Run the Project
+
+## Method 1 (Recommended)
+
+1. Download or Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Student-Management-System.git
+git clone https://github.com/YOUR_USERNAME/University-Management-System.git
 ```
 
-### Install dependencies
+2. Open the project folder.
 
-```bash
-npm install
+3. Open `index.html` in your browser.
+
+OR
+
+Use VS Code.
+
+Install the **Live Server** extension.
+
+Right click on `index.html`
+
+Click
+
+```
+Open with Live Server
 ```
 
-### Start the project
+The project will start automatically.
 
-```bash
-npm start
+---
+
+# 🔑 Default Login Credentials
+
+The project already contains demo users.
+
+## 👨‍💼 Admin Login
+
+Email
+
+```
+admin@example.com
 ```
 
-or
+Password
 
-```bash
-npm run dev
+```
+admin
 ```
 
-## ✨ Modules
+Role
 
-- Admin Module
-- Student Module
-- Teacher Module
-- Faculty Module
-- User Authentication
-- Dashboard Management
+```
+Admin
+```
 
-## 📸 Screenshots
+---
 
-You can add screenshots of your project here.
+## 👩‍🏫 Faculty Login
 
-## 📌 Future Enhancements
+Email
 
+```
+faculty@example.com
+```
+
+Password
+
+```
+faculty
+```
+
+Role
+
+```
+Faculty
+```
+
+---
+
+## 👨‍🎓 Student Login
+
+Email
+
+```
+student@example.com
+```
+
+Password
+
+```
+student
+```
+
+Role
+
+```
+Student
+```
+
+---
+
+# 📝 Register a New User
+
+If you don't want to use the default accounts:
+
+1. Open the project.
+2. Click **Register**.
+3. Enter
+   - Full Name
+   - Email
+   - Password
+   - Select Role
+4. Click **Register**.
+5. Now go to Login.
+6. Login using the newly created account.
+
+---
+
+# 📦 Data Storage
+
+This project does **not** use any backend database.
+
+All information is stored in your browser using **LocalStorage**.
+
+If you clear your browser data or LocalStorage, all registered users and records will be removed.
+
+---
+
+# 🔄 Reset Demo Data
+
+If login stops working because LocalStorage has changed:
+
+1. Open Browser Developer Tools (`F12`).
+2. Go to **Application** → **Local Storage**.
+3. Delete the LocalStorage data for this project.
+4. Refresh the page.
+
+The default demo users will be recreated automatically.
+
+---
+
+# 📌 Modules
+
+- Authentication
+- Student Management
+- Faculty Management
+- Course Management
 - Attendance Management
-- Result Management
-- Email Notifications
-- File Upload
-- Performance Analytics
-- Mobile Responsive Improvements
+- Grade Management
+- User Management
 
-## 👨‍💻 Author
+---
+
+# 📈 Future Improvements
+
+- MongoDB Integration
+- Node.js Backend
+- Express API
+- JWT Authentication
+- Password Encryption
+- Profile Photo Upload
+- File Upload
+- Email Verification
+- Admin Analytics Dashboard
+- Responsive Mobile UI
+
+---
+
+# 👨‍💻 Author
 
 **Aditya Kushwaha**
 
@@ -98,6 +240,8 @@ B.Tech (Computer Science & Engineering)
 
 Gandhi Institute For Technology (GIFT), Bhubaneswar
 
-## 📄 License
+---
+
+# 📜 License
 
 This project is developed for educational and learning purposes.
