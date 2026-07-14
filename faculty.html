@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Faculty Menu</h2>
+        <a href="#profile">Profile</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#grades">Grade Students</a>
+        <a href="#attendance">Mark Attendance</a>
+        <a href="#" id="logout">Logout</a>
+    </nav>
+    <div class="main-content">
+        <h1>Faculty Dashboard</h1>
+        <div id="profile" class="section">
+            <h2>Profile</h2>
+            <p id="facultyInfo"></p>
+        </div>
+        <div id="subjects" class="section hidden">
+            <h2>Assigned Subjects</h2>
+            <ul id="subjectsList"></ul>
+        </div>
+        <div id="grades" class="section hidden">
+            <h2>Grade Students</h2>
+            <select id="studentSelect"></select>
+            <input type="text" id="gradeInput" placeholder="Grade">
+            <button id="submitGradeBtn">Submit Grade</button>
+        </div>
+        <div id="attendance" class="section hidden">
+            <h2>Mark Attendance</h2>
+            <select id="studentSelectAtt"></select>
+            <button id="markPresentBtn">Mark Present</button>
+            <button id="markAbsentBtn">Mark Absent</button>
+        </div>
+        <div id="notification" class="notification hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
